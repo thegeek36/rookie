@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src= "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> 
+  <title>Priyanshu Panda | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="bg-sky-900">
+    <section class="home bg-cover bg-center min-h-screen mt-10 px-28 py-4 flex flex-col justify-center items-center " style="background-image: url('images/homebg1.jpg')">
+      <!-- <nav class="flex items-center flex fixed top-0 left-0 right-0 p-5 z-50 justify-center  bg-white border-gray-200 dark:bg-gray-900">
+      <ul class="flex-1 text-right text-white">
+        <li class="list-none inline-block px-5"><a href="#" class="px-2 text-white font-bold hover:text-violet-300  ">Home</a></li>
+        <li class="list-none inline-block px-5"><a href="#about" class="px-2 hover:text-violet-300 text-white font-bold  ">About</a></li>
+        <li class="list-none inline-block px-5"><a href="#experience" class="px-2 hover:text-violet-300 text-white font-bold">Experience</a></li>
+        <li class="list-none inline-block px-5"><a href="#projects" class="px-2 hover:text-violet-300 text-white font-bold ">Projects</a></li>
+        <li class="list-none inline-block px-5"><a href="#skills" class="px-2 hover:text-violet-300 text-white font-bold ">Skills</a></li>
+        <li class="list-none inline-block px-5"><a href="#contact" class="px-2 hover:text-violet-300 text-white font-bold  ">Contact</a></li>
+      </ul>
+    </nav> -->
+    <nav style="z-index: 99;" class="flex fixed top-0 left-0 right-0 p-5 justify-center bg-white border-gray-200 dark:bg-gray-900 items-center w-[100%] mx-auto">
+      <div class="flex-1 text-right text-white lg:flex hidden flex-1 duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex px-5" id="menuItems">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+              <li class="list-none inline-block px-5"><a href="#" class="px-2 text-white font-bold hover:text-violet-300">Home</a></li>
+              <li class="list-none inline-block px-5"><a href="#about" class="px-2 hover:text-violet-300 text-white font-bold">About</a></li>
+              <li class="list-none inline-block px-5"><a href="#experience" class="px-2 hover:text-violet-300 text-white font-bold">Experience</a></li>
+              <li class="list-none inline-block px-5"><a href="#projects" class="px-2 hover:text-violet-300 text-white font-bold">Projects</a></li>
+              <li class="list-none inline-block px-5"><a href="#skills" class="px-2 hover:text-violet-300 text-white font-bold">Skills</a></li>
+              <li class="list-none inline-block px-5"><a href="#contact" class="px-2 hover:text-violet-300 text-white font-bold">Contact</a></li>
+          </ul>
+      </div>
+      <div class="flex items-right gap-6">
+          <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer md:hidden text-white"></ion-icon>
+      </div>
+  </nav>
+    <div class=" text-white text-center">
+      <b class="text-5xl">👋 Hello, I am</b>
+      <h1 class="text-7xl font-bold leading-normal">Priyanshu Panda</h1>
+      <h3 class="text-xl leading-normal hover:font-bold transition">An aspiring software engineer with the ability to grow as an individual and learn in the surrounding of talented people.</h3>
+      
+      <div class="mt-10 font-bold">
+        <a href="#" class="rounded-3xl bg-yellow-300 text-black hover:bg-yellow-500 hover:text-white hover:border focus:ring-yellow-300 py-3 px-8">Download CV</a>
+    </div>
+     
+    </div>
+  </section>
+
+  <!-- <section id="about" class="container mx-auto min-h-screen px-28 py-6  justify-center">
+    <h2 class="text-5xl font-bold leading-normal">About</h2>
+    <img class="inline mt-8 h-80 w-70 xl:w1/4 left-2 rounded-xl" src="images/profile-img.JPG" alt="Priyanshu Panda profile image">
+    <p>
+        I am Priyanshu Panda, a final year BTech student in CSE at GIET University, Gunupur with a CGPA of 9.03. I'm a fast learner and skilled problem solver with strong fundamentals in DSA honed on LeetCode and HackerRank.  I possess a strong grasp of programming languages like C/C++, Python (including Django, Flask, TensorFlow, and scikit-learn), and JavaScript. 
+        Currently, I'm interning as a Software Developer Intern at DePronto Infotech.  Beyond technical skills, I'm a team player with managerial experience gained through participation in Team OB, which organizes departmental events like conferences, workshops, and fests.
+        </p>
+  </section> -->
+  <!-- <section id="about" class="container mx-auto py-14 px-12">
+    <h2 class="text-5xl font-bold leading-normal mb-8">About</h2>
+    <div class="flex flex-col lg:flex-row gap-10 justify-center items-center">
+        <div class="lg:w-1/3">
+            <div class="max-w-xs mx-auto lg:max-w-none bg-white shadow-lg rounded-xl overflow-hidden">
+                <img class="w-full h-auto" src="images/profile-img.JPG" alt="Priyanshu Panda profile image">
+            </div>
+        </div>
+        <div class="lg:w-2/3">
+            <div class="bg-white shadow-lg rounded-xl p-6 border-2 border-gray-200">
+                <p class="text-lg text-gray-700">
+                    I am Priyanshu Panda, a final year BTech student in Computer Science Engineering at GIET University, Gunupur, with a CGPA of 9.03. I'm a fast learner and skilled problem solver with strong fundamentals in Data Structures and Algorithms, honed on platforms like LeetCode and HackerRank. My proficiency extends to programming languages such as C/C++, Python (including Django, Flask, TensorFlow, and scikit-learn), and JavaScript.
+                </p>
+                <p class="mt-4 text-lg text-gray-700">
+                    Currently, I'm interning as a Software Developer Intern at DePronto Infotech. Besides technical skills, I'm a team player with managerial experience gained through participation in Team OB, which organizes departmental events like conferences, workshops, and fests.
+                </p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section id="about" class="container mx-auto py-14 px-8">
+  <h2 class="text-5xl font-bold leading-normal mb-8 px-9 underline text-center">About Me</h2>
+  <div class="flex flex-col lg:flex-row gap-10 justify-center items-center">
+      <div class="lg:w-1/3 px-6 hover:scale-110 transition duration-500 cursor-pointer">
+          <div class="max-w-xs mx-auto lg:max-w-none bg-white shadow-lg rounded-xl overflow-hidden h-400 lg:h-full hover:border-double border-8 border-sky-500 ">
+              <img class="w-full h-auto lg:h-full transition duration-300 ease-in-out hover:shadow-lg " src="images/profile-img.JPG" alt="Priyanshu Panda profile image">
+          </div>
+      </div>
+      <div class="lg:w-2/3 px-6">
+          <div class="bg-white shadow-lg rounded-xl border-2 border-gray-200 p-6 h-400 lg:h-full">
+              <GIET class="text-lg text-gray-700">
+                Hey there, I'm Priyanshu Panda, a final-year Computer Science Engineering student at <a href="https://www.giet.edu/" class="text-sky-700 font-bold hover:underline">GIET University</a> in Gunupur.I come from the Steel City of <a href="https://en.wikipedia.org/wiki/Rourkela" class="text-sky-700 font-bold hover:underline">Rourkela</a> in Odisha, India.<br> Let me tell you a bit about my journey in the tech world.
+              </p>
+              <p class="mt-4 text-lg text-gray-700">
+                Proficient in <b>Python</b>, <b>C/C++</b>, <b>JavaScript</b>, and <b>PHP</b>, with hands-on experience in web development using <b>Django</b> and <b>Flask</b> frameworks. Skilled in machine learning libraries like <b>TensorFlow</b>, <b>scikit-learn</b>, <b>NumPy</b>, and <b>pandas</b>.Familiar with <b>HTML/CSS</b> for frontend development and proficient in <b>SQL</b> and <b>Firebase</b> for database management. Additionally, often practice coding questions on various platforms and a adept <a href="https://leetcode.com/its_priyanshu/" class="text-sky-700 font-bold hover:underline">problem solver</a>.
+              </p>
+              <p class="mt-4 text-lg text-gray-700">
+                Currently I am interning at <b>DePronto Infotech</b> where,I'm working on multiple projects in the BFSI domain for prominent banks of India. 
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <section id="experience" class="container mx-auto py-14">
+    <h2 class="text-5xl font-bold leading-normal mb-8 px-9 underline text-center">Experience</h2>
+    <div class="flex flex-wrap justify-center items-start"> <!-- Added flex and flex-wrap classes -->
+        <div class="lg:w-1/3 mb-4 px-4"> <!-- Adjusted width and added margin for spacing -->
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg w-auto" src="images/images.jpeg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Software Developer Intern at DePronto Infotech (Dec 2023 - Present)</h5>
+                    </a>
+                    <ul class="mb-3 font-normal text-white-700 dark:text-white"> <!-- Changed class and removed duplicate class -->
+                        <li class="mb-3"> <!-- Removed unnecessary class -->
+                            Actively contributing to various projects for prominent private banks of India. 
+                        </li>
+                        <li class="mb-3">
+                            Facilitating the seamless deployment of applications across all environments
+                        </li>
+                        <li class="mb-3">
+                            Addressing and rectifying issues identified by quality assurance teams and clients.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the same structure for the other two divs -->
+        <div class="lg:w-1/3 mb-4 px-4"> <!-- Adjusted width and added margin for spacing -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                  <img class="rounded-t-lg w-auto" src="images/images.jpeg" alt="" />
+              </a>
+              <div class="p-5">
+                  <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Software Developer Intern at DePronto Infotech (Dec 2023 - Present)</h5>
+                  </a>
+                  <ul class="mb-3 font-normal text-white-700 dark:text-white"> <!-- Changed class and removed duplicate class -->
+                      <li class="mb-3"> <!-- Removed unnecessary class -->
+                          Actively contributing to various projects for prominent private banks of India. 
+                      </li>
+                      <li class="mb-3">
+                          Facilitating the seamless deployment of applications across all environments
+                      </li>
+                      <li class="mb-3">
+                          Addressing and rectifying issues identified by quality assurance teams and clients.
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="lg:w-1/3 mb-4 px-4"> <!-- Adjusted width and added margin for spacing -->
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg w-auto" src="images/images.jpeg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Software Developer Intern at DePronto Infotech (Dec 2023 - Present)</h5>
+                </a>
+                <ul class="mb-3 font-normal text-white-700 dark:text-white"> <!-- Changed class and removed duplicate class -->
+                    <li class="mb-3"> <!-- Removed unnecessary class -->
+                        Actively contributing to various projects for prominent private banks of India. 
+                    </li>
+                    <li class="mb-3">
+                        Facilitating the seamless deployment of applications across all environments
+                    </li>
+                    <li class="mb-3">
+                        Addressing and rectifying issues identified by quality assurance teams and clients.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+  <section id="projects" class="container mx-auto py-14">
+    <h2 class="text-5xl font-bold leading-normal mb-8 px-9 underline text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+      <!-- Card 1 -->
+      <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+        <div class="relative group p-2">
+            <img class="w-full h-auto object-cover  border-4 rounded " src="images/project1.png" alt="Bharatiya Rescue: Missing Person Detection System">
+            <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+              <a href="https://github.com/thegeek36/Missing-Person-Detection-System" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+              <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+          </div>
+        </div>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-center">Bharatiya Rescue: Missing Person Detection System!</div>
+        </div>
+    </div>
+    
+      <!-- Repeat the above card structure for additional cards -->
+            <!-- Card 2 -->
+            <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+              <div class="relative group p-2">
+                  <img class="w-full h-auto object-cover  border-4 rounded " src="images/project2.png" alt="Project">
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                    <a href="https://github.com/thegeek36/Recipe-App" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+                    <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+                </div>
+              </div>
+              <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-center">MyRecipes.com: Interactive Recipe Sharing Platform</div>
+              </div>
+          </div>
+
+                <!-- Card 3 -->
+                <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+                  <div class="relative group p-2">
+                      <img class="w-full h-auto object-cover  border-4 rounded " src="images/project3.png" alt="Bharatiya Rescue: Missing Person Detection System">
+                      <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                        <a href="https://github.com/thegeek36/Multiple-Disease-Prediction" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+                        <a href="https://multiple-disease-prediction-pp.streamlit.app/" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+                    </div>
+                  </div>
+                  <div class="px-6 py-4">
+                      <div class="font-bold text-xl mb-2 text-center">Multiple Disease Prediction Using Python and Machine Learning</div>
+                  </div>
+              </div>
+
+            <!-- Card 4 -->
+            <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+              <div class="relative group p-2">
+                  <img class="w-full h-auto object-cover  border-4 rounded " src="images/weather360.png" alt="Bharatiya Rescue: Missing Person Detection System">
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                    <a href="https://github.com/thegeek36/Weather360" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+                    <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+                </div>
+              </div>
+              <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-center">Weather360 : Interactive weather app for everyone</div>
+              </div>
+          </div>
+                  <!-- Card 5 -->
+                  <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+                    <div class="relative group p-2">
+                        <img class="w-full h-auto object-cover  border-4 rounded " src="images/project5.png" alt="Bharatiya Rescue: Missing Person Detection System">
+                        <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                          <a href="https://github.com/thegeek36/Fake-News-Prediction" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+                          <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+                      </div>
+                    </div>
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 text-center">Fake News Detection Using Machine Learning</div>
+                    </div>
+                </div>
+
+            <!-- Card 6 -->
+            <div class="max-w-sm rounded overflow-hidden bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5">
+              <div class="relative group p-2">
+                  <img class="w-full h-auto object-cover  border-4 rounded " src="images/project4.png" alt="Bharatiya Rescue: Missing Person Detection System">
+                  <div class="absolute inset-0 bg-gray-800 bg-opacity-50 p-2 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity p-2">
+                    <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded mr-2"><img src="images/github.png" class="w-10 h-10" alt="Live Link"></a>
+                    <a href="#" class="text-white bg-white-700 hover:bg-white-600 px-3 py-1 rounded"><img src="images/link.png" class="w-10 h-10" alt="Live Link"></a>
+                </div>
+              </div>
+              <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2 text-center">Quick Chat : Chat app for Android devices </div>
+              </div>
+          </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container mx-auto py-14 items-center">
+    <h2 class="text-5xl font-bold leading-normal mb-8 px-9 underline text-center">Skills</h2>
+    <div class="container mx-auto px-10 py-6 ">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <!-- Image 1 -->
+        <div class="relative px-10">
+          <img src="images/skill1.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-black text-center py-2 opacity-0 transition duration-300">
+            C++
+          </div>
+        </div>
+    
+        <!-- Image 2 -->
+        <div class="relative">
+          <img src="images/skill2.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            Tech Stack 2
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="relative">
+          <img src="images/skill3.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            C++
+          </div>
+        </div>
+    
+        <!-- Image 4 -->
+        <div class="relative">
+          <img src="images/skill4.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            Tech Stack 2
+          </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="relative">
+          <img src="images/skill5.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            C++
+          </div>
+        </div>
+    
+        <!-- Image 6 -->
+        <div class="relative">
+          <img src="images/skill6.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            Tech Stack 2
+          </div>
+        </div>
+        <!-- Image 7 -->
+        <div class="relative">
+          <img src="images/skill7.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            C++
+          </div>
+        </div>
+    
+        <!-- Image 8 -->
+        <div class="relative">
+          <img src="images/skill8.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            Tech Stack 2
+          </div>
+        </div>
+        <!-- Image 9 -->
+        <div class="relative">
+          <img src="images/skill9.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            C++
+          </div>
+        </div>
+    
+        <!-- Image 10 -->
+        <div class="relative">
+          <img src="images/skill10.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+            Tech Stack 2
+          </div>
+        </div>
+    
+          <!-- Image 11 -->
+          <div class="relative">
+            <img src="images/skill11.png" alt="Tech Stack 1" class="w-20 h-30 rounded-md">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+              C++
+            </div>
+          </div>
+      
+          <!-- Image 12 -->
+          <div class="relative">
+            <img src="images/skill12.png" alt="Tech Stack 2" class="w-20 h-30 rounded-md">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 opacity-0 transition duration-300">
+              Tech Stack 2
+            </div>
+          </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="contact" class="container mx-auto py-14">
+    <h2 class="text-5xl font-bold leading-normal mb-8 px-9 underline text-center">Contact Me</h2>
+    <p>List your noteworthy projects and any industry certifications you've obtained.</p>
+  </section>
+</body>
